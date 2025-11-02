@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Application Form</title>
+  <title>Registration Form</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 min-h-screen">
+
 
   <nav class="bg-blue-600 p-4">
     <div class="container mx-auto flex space-x-4">
@@ -16,8 +17,8 @@
   </nav>
 
   <div class="container mx-auto mt-10 max-w-md bg-white p-8 rounded-lg shadow-lg">
-    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Application Form</h2>
-    <form action="/submit-application" method="POST" class="space-y-4">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Registration Form</h2>
+    <form action="/submit-registration" method="POST" class="space-y-4">
       <div>
         <label class="block text-gray-700">Name:</label>
         <input type="text" name="name" required class="w-full px-3 py-2 border rounded-md">
@@ -27,14 +28,10 @@
         <input type="email" name="email" required class="w-full px-3 py-2 border rounded-md">
       </div>
       <div>
-        <label class="block text-gray-700">Course:</label>
-        <input type="text" name="course" required class="w-full px-3 py-2 border rounded-md">
+        <label class="block text-gray-700">Password:</label>
+        <input type="password" name="password" required class="w-full px-3 py-2 border rounded-md">
       </div>
-      <div>
-        <label class="block text-gray-700">Applied On:</label>
-        <input type="date" name="applied_on" required class="w-full px-3 py-2 border rounded-md">
-      </div>
-      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">Submit</button>
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">Register</button>
     </form>
   </div>
 
